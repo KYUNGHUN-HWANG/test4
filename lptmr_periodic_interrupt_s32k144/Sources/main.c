@@ -76,10 +76,19 @@ volatile int exit_code = 0;
 /* LPTMR IRQ handler */
 void lptmrISR(void)
 {
-    /* Clear compare flag */
-    LPTMR_DRV_ClearCompareFlag(INST_LPTMR1);
-    /* Toggle LED0 */
+  static uint8_t count = 0U;
+  
+  /* Clear compare flag */
+  LPTMR_DRV_ClearCompareFlag(INST_LPTMR1);
+  
+  count++;
+  
+  /* Toggle LED0 every 3 seconds */
+  if (count >= 3U)
+  {
     PINS_DRV_TogglePins(LED_GPIO_PORT, (1 << LED0_INDEX));
+    count = 0U;
+  }
 }
 
 /*!
