@@ -1,0 +1,94 @@
+23:27:07 **** Build of configuration Debug_FLASH for project lptmr_periodic_interrupt_s32k144 ****
+make -j8 all 
+Building file: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/startup/gcc/startup_S32K144.S
+Building file: ../Sources/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/main.args" -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -o "Sources/main.o" "../Sources/main.c"
+Invoking: Standard S32DS Assembler
+arm-none-eabi-gcc "@Project_Settings/Startup_Code/Startup_S32K144.args" -o "Project_Settings/Startup_Code/startup_S32K144.o" "C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/startup/gcc/startup_S32K144.S"
+../Sources/main.c:49:17: fatal error: Cpu.h: No such file or directory
+ #include "Cpu.h"
+                 ^
+compilation terminated.
+make: *** [Sources/subdir.mk:20: Sources/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/startup/gcc/startup_S32K144.S
+ 
+23:29:21 **** Incremental Build of configuration Debug_FLASH for project lptmr_periodic_interrupt_s32k144 ****
+make -j8 all 
+Building file: ../Sources/main.c
+Invoking: Standard S32DS C Compiler
+Building file: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/pins/pins_driver.c
+arm-none-eabi-gcc "@Sources/main.args" -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -o "Sources/main.o" "../Sources/main.c"
+Invoking: Standard S32DS C Compiler
+Building file: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/pins/pins_port_hw_access.c
+arm-none-eabi-gcc "@SDK/platform/drivers/src/pins/pins_driver.args" -MMD -MP -MF"SDK/platform/drivers/src/pins/pins_driver.d" -MT"SDK/platform/drivers/src/pins/pins_driver.o" -o "SDK/platform/drivers/src/pins/pins_driver.o" "C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/pins/pins_driver.c"
+Invoking: Standard S32DS C Compiler
+Building file: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/lptmr/lptmr_driver.c
+arm-none-eabi-gcc "@SDK/platform/drivers/src/pins/pins_port_hw_access.args" -MMD -MP -MF"SDK/platform/drivers/src/pins/pins_port_hw_access.d" -MT"SDK/platform/drivers/src/pins/pins_port_hw_access.o" -o "SDK/platform/drivers/src/pins/pins_port_hw_access.o" "C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/pins/pins_port_hw_access.c"
+Invoking: Standard S32DS C Compiler
+Building file: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/lptmr/lptmr_hw_access.c
+arm-none-eabi-gcc "@SDK/platform/drivers/src/lptmr/lptmr_driver.args" -MMD -MP -MF"SDK/platform/drivers/src/lptmr/lptmr_driver.d" -MT"SDK/platform/drivers/src/lptmr/lptmr_driver.o" -o "SDK/platform/drivers/src/lptmr/lptmr_driver.o" "C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/lptmr/lptmr_driver.c"
+Invoking: Standard S32DS C Compiler
+Building file: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/interrupt/interrupt_manager.c
+Finished building: ../Sources/main.c
+Invoking: Standard S32DS C Compiler
+Finished building: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/pins/pins_driver.c
+arm-none-eabi-gcc "@SDK/platform/drivers/src/interrupt/interrupt_manager.args" -MMD -MP -MF"SDK/platform/drivers/src/interrupt/interrupt_manager.d" -MT"SDK/platform/drivers/src/interrupt/interrupt_manager.o" -o "SDK/platform/drivers/src/interrupt/interrupt_manager.o" "C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/interrupt/interrupt_manager.c"
+Finished building: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/pins/pins_port_hw_access.c
+ 
+arm-none-eabi-gcc "@SDK/platform/drivers/src/lptmr/lptmr_hw_access.args" -MMD -MP -MF"SDK/platform/drivers/src/lptmr/lptmr_hw_access.d" -MT"SDK/platform/drivers/src/lptmr/lptmr_hw_access.o" -o "SDK/platform/drivers/src/lptmr/lptmr_hw_access.o" "C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/lptmr/lptmr_hw_access.c"
+ 
+ 
+Building file: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.c
+Building file: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/startup/system_S32K144.c
+Building file: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/startup.c
+Invoking: Standard S32DS C Compiler
+Building file: ../Generated_Code/Cpu.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/devices/S32K144/startup/system_S32K144.args" -MMD -MP -MF"SDK/platform/devices/S32K144/startup/system_S32K144.d" -MT"SDK/platform/devices/S32K144/startup/system_S32K144.o" -o "SDK/platform/devices/S32K144/startup/system_S32K144.o" "C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/startup/system_S32K144.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@SDK/platform/devices/startup.args" -MMD -MP -MF"SDK/platform/devices/startup.d" -MT"SDK/platform/devices/startup.o" -o "SDK/platform/devices/startup.o" "C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/startup.c"
+Finished building: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/lptmr/lptmr_driver.c
+arm-none-eabi-gcc "@Generated_Code/Cpu.args" -MMD -MP -MF"Generated_Code/Cpu.d" -MT"Generated_Code/Cpu.o" -o "Generated_Code/Cpu.o" "../Generated_Code/Cpu.c"
+arm-none-eabi-gcc "@SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.args" -MMD -MP -MF"SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.d" -MT"SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o" -o "SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o" "C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.c"
+ 
+Building file: ../Generated_Code/clockMan1.c
+Finished building: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/startup.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/Cpu.args" -MMD -MP -MF"Generated_Code/clockMan1.d" -MT"Generated_Code/clockMan1.o" -o "Generated_Code/clockMan1.o" "../Generated_Code/clockMan1.c"
+Finished building: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/devices/S32K144/startup/system_S32K144.c
+ 
+ 
+Finished building: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/interrupt/interrupt_manager.c
+Finished building: ../Generated_Code/Cpu.c
+Finished building: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.c
+ 
+ 
+ 
+Finished building: C:/NXP/S32DS_ARM_v2.2/S32DS/software/S32SDK_S32K1xx_RTM_3.0.0/platform/drivers/src/lptmr/lptmr_hw_access.c
+Building file: ../Generated_Code/lpTmr1.c
+Building file: ../Generated_Code/pin_mux.c
+ 
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/Cpu.args" -MMD -MP -MF"Generated_Code/lpTmr1.d" -MT"Generated_Code/lpTmr1.o" -o "Generated_Code/lpTmr1.o" "../Generated_Code/lpTmr1.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Generated_Code/Cpu.args" -MMD -MP -MF"Generated_Code/pin_mux.d" -MT"Generated_Code/pin_mux.o" -o "Generated_Code/pin_mux.o" "../Generated_Code/pin_mux.c"
+Finished building: ../Generated_Code/clockMan1.c
+Finished building: ../Generated_Code/lpTmr1.c
+ 
+ 
+Finished building: ../Generated_Code/pin_mux.c
+ 
+Building target: lptmr_periodic_interrupt_s32k144.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "lptmr_periodic_interrupt_s32k144.elf" "@lptmr_periodic_interrupt_s32k144.args"  
+Finished building target: lptmr_periodic_interrupt_s32k144.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley lptmr_periodic_interrupt_s32k144.elf
+   text	   data	    bss	    dec	    hex	filename
+   9544	    388	   3120	  13052	   32fc	lptmr_periodic_interrupt_s32k144.elf
+Finished building: lptmr_periodic_interrupt_s32k144.siz
+ 
