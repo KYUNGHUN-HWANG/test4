@@ -1,4 +1,4 @@
-00:00:05 **** Incremental Build of configuration Debug_FLASH for project lptmr_periodic_interrupt_s32k144 ****
+00:12:42 **** Incremental Build of configuration Debug_FLASH for project lptmr_periodic_interrupt_s32k144 ****
 make -j8 all 
 Building file: ../Sources/main.c
 Invoking: Standard S32DS C Compiler
@@ -13,9 +13,9 @@ Finished building target: lptmr_periodic_interrupt_s32k144.elf
 Invoking: Standard S32DS Print Size
 arm-none-eabi-size --format=berkeley lptmr_periodic_interrupt_s32k144.elf
    text	   data	    bss	    dec	    hex	filename
-   9600	    388	   3128	  13116	   333c	lptmr_periodic_interrupt_s32k144.elf
+   9816	    388	   3120	  13324	   340c	lptmr_periodic_interrupt_s32k144.elf
 Finished building: lptmr_periodic_interrupt_s32k144.siz
  
 
-00:00:16 Build Finished (took 10s.891ms)
+00:12:45 Build Finished (took 3s.289ms)
 
