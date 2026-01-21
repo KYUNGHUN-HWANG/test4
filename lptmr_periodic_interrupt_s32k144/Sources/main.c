@@ -126,6 +126,15 @@ int main(void)
     /* Enable IRQ for LPTMR */
     INT_SYS_EnableIRQ(LPTMR0_IRQn);
 
+    /* Set compare value to 3 seconds (in microseconds) */
+    {
+      status_t status = LPTMR_DRV_SetCompareValueByUs(INST_LPTMR1, 3000000U);
+      if (status != STATUS_SUCCESS)
+      {
+        exit_code = 1;
+      }
+    }
+
     /* Start LPTMR counter */
     LPTMR_DRV_StartCounter(INST_LPTMR1);
 
