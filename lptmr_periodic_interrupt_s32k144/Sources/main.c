@@ -76,19 +76,10 @@ volatile int exit_code = 0;
 /* LPTMR IRQ handler */
 void lptmrISR(void)
 {
-  static uint8_t count = 0U;
-  
-  /* Clear compare flag */
-  LPTMR_DRV_ClearCompareFlag(INST_LPTMR1);
-  
-  count++;
-  
-  /* Toggle LED0 every 3 seconds */
-  if (count >= 3U)
-  {
+    /* Clear compare flag */
+    LPTMR_DRV_ClearCompareFlag(INST_LPTMR1);
+    /* Toggle LED0 */
     PINS_DRV_TogglePins(LED_GPIO_PORT, (1 << LED0_INDEX));
-    count = 0U;
-  }
 }
 
 /*!
@@ -124,17 +115,11 @@ int main(void)
     PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);
 
     /* Init LPTMR as timer
-     *  -   interrupt after 3 seconds
+     *  -   interrupt after 1 second
      *  -   SIRC as clock source
      *  -   counter disabled
      */
     LPTMR_DRV_Init(INST_LPTMR1, &lpTmr1_config0, false);
-
-    /* Configure LPTMR for 3 second period */
-    lptmr_config_t lptmrConfig3Sec;
-    lptmrConfig3Sec = lpTmr1_config0;
-    lptmrConfig3Sec.compareValue = 3000000U;
-    LPTMR_DRV_SetConfig(INST_LPTMR1, &lptmrConfig3Sec);
 
     /* Install IRQ handler for LPTMR interrupt */
     INT_SYS_InstallHandler(LPTMR0_IRQn, &lptmrISR, (isr_t *)0);

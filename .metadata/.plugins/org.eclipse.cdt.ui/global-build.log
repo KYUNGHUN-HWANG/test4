@@ -92,3 +92,75 @@ arm-none-eabi-size --format=berkeley lptmr_periodic_interrupt_s32k144.elf
    9544	    388	   3120	  13052	   32fc	lptmr_periodic_interrupt_s32k144.elf
 Finished building: lptmr_periodic_interrupt_s32k144.siz
  
+23:42:59 **** Incremental Build of configuration Debug_FLASH for project lptmr_periodic_interrupt_s32k144 ****
+make -j8 all 
+Building file: ../Sources/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/main.args" -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: lptmr_periodic_interrupt_s32k144.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "lptmr_periodic_interrupt_s32k144.elf" "@lptmr_periodic_interrupt_s32k144.args"  
+Finished building target: lptmr_periodic_interrupt_s32k144.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley lptmr_periodic_interrupt_s32k144.elf
+   text	   data	    bss	    dec	    hex	filename
+   9576	    388	   3120	  13084	   331c	lptmr_periodic_interrupt_s32k144.elf
+Finished building: lptmr_periodic_interrupt_s32k144.siz
+ 
+23:49:01 **** Incremental Build of configuration Debug_FLASH for project lptmr_periodic_interrupt_s32k144 ****
+make -j8 all 
+Building file: ../Sources/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/main.args" -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: lptmr_periodic_interrupt_s32k144.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "lptmr_periodic_interrupt_s32k144.elf" "@lptmr_periodic_interrupt_s32k144.args"  
+Finished building target: lptmr_periodic_interrupt_s32k144.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley lptmr_periodic_interrupt_s32k144.elf
+   text	   data	    bss	    dec	    hex	filename
+   9816	    388	   3120	  13324	   340c	lptmr_periodic_interrupt_s32k144.elf
+Finished building: lptmr_periodic_interrupt_s32k144.siz
+ 
+23:49:49 **** Incremental Build of configuration Debug_FLASH for project lptmr_periodic_interrupt_s32k144 ****
+make -j8 all 
+Building file: ../Sources/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/main.args" -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: lptmr_periodic_interrupt_s32k144.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "lptmr_periodic_interrupt_s32k144.elf" "@lptmr_periodic_interrupt_s32k144.args"  
+Finished building target: lptmr_periodic_interrupt_s32k144.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley lptmr_periodic_interrupt_s32k144.elf
+   text	   data	    bss	    dec	    hex	filename
+   9576	    388	   3120	  13084	   331c	lptmr_periodic_interrupt_s32k144.elf
+Finished building: lptmr_periodic_interrupt_s32k144.siz
+ 
+00:00:05 **** Incremental Build of configuration Debug_FLASH for project lptmr_periodic_interrupt_s32k144 ****
+make -j8 all 
+Building file: ../Sources/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/main.args" -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: lptmr_periodic_interrupt_s32k144.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "lptmr_periodic_interrupt_s32k144.elf" "@lptmr_periodic_interrupt_s32k144.args"  
+Finished building target: lptmr_periodic_interrupt_s32k144.elf
+ 
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley lptmr_periodic_interrupt_s32k144.elf
+   text	   data	    bss	    dec	    hex	filename
+   9600	    388	   3128	  13116	   333c	lptmr_periodic_interrupt_s32k144.elf
+Finished building: lptmr_periodic_interrupt_s32k144.siz
+ 
