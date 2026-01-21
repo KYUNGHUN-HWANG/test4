@@ -115,11 +115,17 @@ int main(void)
     PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);
 
     /* Init LPTMR as timer
-     *  -   interrupt after 1 second
+     *  -   interrupt after 3 seconds
      *  -   SIRC as clock source
      *  -   counter disabled
      */
     LPTMR_DRV_Init(INST_LPTMR1, &lpTmr1_config0, false);
+
+    /* Configure LPTMR for 3 second period */
+    lptmr_config_t lptmrConfig3Sec;
+    lptmrConfig3Sec = lpTmr1_config0;
+    lptmrConfig3Sec.compareValue = 3000000U;
+    LPTMR_DRV_SetConfig(INST_LPTMR1, &lptmrConfig3Sec);
 
     /* Install IRQ handler for LPTMR interrupt */
     INT_SYS_InstallHandler(LPTMR0_IRQn, &lptmrISR, (isr_t *)0);
